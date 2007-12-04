@@ -1,6 +1,6 @@
 %define name grpn
 %define version 1.1.2
-%define release 5mdk
+%define release  %mkrel 5
 
 Name: 		%{name}
 Version: 	%{version}
