@@ -35,15 +35,15 @@ rm -rf $RPM_BUILD_ROOT
 install -m 755 -d $RPM_BUILD_ROOT%{_bindir}
 install -m 755 grpn $RPM_BUILD_ROOT%{_bindir}
 
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat > $RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-command="%{_bindir}/grpn"\
-title="Grpn"\
-longtitle="A RPN calculator"\
-needs="x11"\
-icon="mathematics_section.png"\
-section="Applications/Sciences/Mathematics"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application <<EOF
+Exec=%{_bindir}/grpn
+Name=Grpn
+Comment=A RPN calculator
+Icon=mathematics_section
+Categories=Science;Math;
 EOF
 
 
@@ -60,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-,root,root)
 %doc CHANGES LICENSE README
 %{_bindir}/*
-%{_menudir}/*
+%{_datadir}/applications/mandriva-*.desktop
 
