@@ -11,6 +11,7 @@ URL: 		http://lashwhip.com/grpn.html
 Group: 		Sciences/Mathematics
 Source: 	%{name}-%{version}.tar.bz2
 BuildRequires: gtk+-devel
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description 
 GRPN Version 1.0, By Paul Wilkins
