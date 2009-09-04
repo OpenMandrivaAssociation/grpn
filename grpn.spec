@@ -1,6 +1,6 @@
 %define name grpn
 %define version 1.1.2
-%define release  %mkrel 7
+%define release  %mkrel 8
 
 Name: 		%{name}
 Version: 	%{version}
