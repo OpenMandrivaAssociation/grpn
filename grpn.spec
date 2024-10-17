@@ -3,7 +3,7 @@ Version: 	1.1.2
 Release: 	10
 License: 	GPL
 Summary: 	RPN calculator for X built using the GIMP Toolkit
-URL: 		http://lashwhip.com/grpn.html
+URL: 		https://lashwhip.com/grpn.html
 Group: 		Sciences/Mathematics
 Source: 	%{name}-%{version}.tar.bz2
 BuildRequires: gtk+-devel
