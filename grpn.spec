@@ -6,6 +6,7 @@ Summary: 	RPN calculator for X built using the GIMP Toolkit
 URL: 		https://lashwhip.com/grpn.html
 Group: 		Sciences/Mathematics
 Source: 	%{name}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires: gtk+-devel
 
 %description 
